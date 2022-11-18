@@ -2,6 +2,9 @@ body {
     background-color: orange;
     display:flex;
     flex-direction: column;
+    background-image: url("../Ninja-Field-Phase-1-Project/images/narutoSymbol.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 

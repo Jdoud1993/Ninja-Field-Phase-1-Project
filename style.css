@@ -30,10 +30,11 @@ div {
 #ninjas {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
 }
 
-#ninjaInformation {
+#ninjaForm {
     flex-grow: 1;
 }
 
@@ -73,6 +74,13 @@ div {
     cursor: pointer; 
 }
 
+#filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*Class Styles */
 
@@ -86,3 +94,25 @@ div {
     -webkit-background-clip: text;
     font-size: 50px;
 }
+
+.filter-text {
+    font-family: 'Ninja Naruto', sans-serif;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,white, white, white);
+    -webkit-background-clip: text;
+    font-size: 50px;
+    border: none;
+    appearance: none;
+}
+
+.filter-text:hover {
+    cursor: pointer;
+}
+
+.filter-text:after {
+    border: none;
+}
+
+

@@ -20,7 +20,11 @@ div {
 #title {
     display: flex;
     justify-content: center;
-    background: linear-gradient(rgb(4, 71, 4),white );
+}
+
+#mainTitle.title-text {
+    font-size: 100px;
+    background-image: linear-gradient(to right, white, gray, white);
 }
 
 #ninjas {
@@ -60,11 +64,13 @@ div {
     font-size: 50px;
     background: none;
     border: none;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
 }
 
 #FIGHT:hover {
     color: orange;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 
@@ -72,7 +78,11 @@ div {
 
 .title-text {
     font-family: 'Ninja Naruto', sans-serif;
-    color: rgb(231, 153, 8);
-    text-shadow: 5px 5px 10px black;
-    
+    color: orange;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,yellow,orange, orangered);
+    -webkit-background-clip: text;
+    font-size: 50px;
 }

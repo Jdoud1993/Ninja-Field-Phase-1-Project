@@ -12,7 +12,6 @@ body {
 }
 
 div {
-    background: linear-gradient(rgb(4, 71, 4),white );
     margin: 50px;
 }
 
@@ -49,6 +48,25 @@ div {
     flex-grow: .75;
     justify-content: space-around;
 }
+
+#fightButton {
+    align-self: center;
+}
+
+#FIGHT {
+    font-family: "Ninja Naruto", sans-serif;
+    color: rgb(251, 248, 243);
+    text-shadow: 5px 5px 10px black;
+    font-size: 50px;
+    background: none;
+    border: none;
+}
+
+#FIGHT:hover {
+    color: orange;
+    cursor: pointer;
+}
+
 
 /*Class Styles */
 

@@ -38,8 +38,16 @@ div {
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8e27d769-0a2f-4aa3-a6b2-83c556cc602d/d78k9ob-81d450d2-c8ca-4d47-910f-80a901979966.png/v1/fill/w_1024,h_576,q_80,strp/background_naruto_by_nitopfam_d78k9ob-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvOGUyN2Q3NjktMGEyZi00YWEzLWE2YjItODNjNTU2Y2M2MDJkXC9kNzhrOW9iLTgxZDQ1MGQyLWM4Y2EtNGQ0Ny05MTBmLTgwYTkwMTk3OTk2Ni5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19._R_mXghmCn7Q3YSUgOOKi5h5hh-KS2xwq5V099luZDE");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:bottom
-    
+    background-position:bottom;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+#squads {
+    display: flex;
+    flex-grow: .75;
+    justify-content: space-around;
 }
 
 /*Class Styles */

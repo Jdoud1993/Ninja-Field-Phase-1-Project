@@ -35,4 +35,7 @@ div {
 
 .title-text {
     font-family: 'Ninja Naruto', sans-serif;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+    
 }

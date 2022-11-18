@@ -1,3 +1,29 @@
 body {
     background-color: orange;
+    display:flex;
+    flex-direction: column;
+
+}
+
+div {
+    border-color: black;
+    border:5px;
+    border-style: solid;
+}
+
+/* ID Styles */
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#ninjas {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#ninjaInformation {
+    flex-grow: 1;
 }

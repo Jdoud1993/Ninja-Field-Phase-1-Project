@@ -30,3 +30,9 @@ div {
 #ninjaInformation {
     flex-grow: 1;
 }
+
+/*Class Styles */
+
+.title-text {
+    font-family: 'Ninja Naruto', sans-serif;
+}

@@ -21,6 +21,7 @@ function handleSubmit(e) {
     }
     renderOneNinja(ninjaObj)
     addNinja(ninjaObj)
+    document.querySelector("#addNinja").reset()
 }
 
 

@@ -87,6 +87,21 @@ div {
     align-items: center;
 }
 
+.ninja-card {
+    background: white;
+    width: 400px;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 50px black;
+}
+
+.ninja-card img {
+    border-style: solid;
+    border-color: black;
+}
+
 
 /*Class Styles */
 

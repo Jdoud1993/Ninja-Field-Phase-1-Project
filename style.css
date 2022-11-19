@@ -31,12 +31,18 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76612106-8aba-4097-9619-baee44cc3b5f/d88l3ym-4ea9a020-570a-45e1-9b2e-48b56fd03523.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2NjEyMTA2LThhYmEtNDA5Ny05NjE5LWJhZWU0NGNjM2I1ZlwvZDg4bDN5bS00ZWE5YTAyMC01NzBhLTQ1ZTEtOWIyZS00OGI1NmZkMDM1MjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bvSzMtEUF5fnaxadKipURSNrTGaXt25qbmHh2vrId6g");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 #ninjaForm {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
+
 
 #battleField {
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8e27d769-0a2f-4aa3-a6b2-83c556cc602d/d78k9ob-81d450d2-c8ca-4d47-910f-80a901979966.png/v1/fill/w_1024,h_576,q_80,strp/background_naruto_by_nitopfam_d78k9ob-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvOGUyN2Q3NjktMGEyZi00YWEzLWE2YjItODNjNTU2Y2M2MDJkXC9kNzhrOW9iLTgxZDQ1MGQyLWM4Y2EtNGQ0Ny05MTBmLTgwYTkwMTk3OTk2Ni5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19._R_mXghmCn7Q3YSUgOOKi5h5hh-KS2xwq5V099luZDE");
@@ -79,7 +85,6 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76612106-8aba-4097-9619-baee44cc3b5f/d88l3ym-4ea9a020-570a-45e1-9b2e-48b56fd03523.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2NjEyMTA2LThhYmEtNDA5Ny05NjE5LWJhZWU0NGNjM2I1ZlwvZDg4bDN5bS00ZWE5YTAyMC01NzBhLTQ1ZTEtOWIyZS00OGI1NmZkMDM1MjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bvSzMtEUF5fnaxadKipURSNrTGaXt25qbmHh2vrId6g")
 }
 
 

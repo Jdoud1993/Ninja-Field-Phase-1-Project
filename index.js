@@ -6,6 +6,8 @@ getAllNinjas()
 
 document.querySelector("#addNinja").addEventListener("submit", handleSubmit)
 
+document.querySelector("#filterNinja").addEventListener("change", handleChange)
+
 
 
 // Event Handler Functions
@@ -22,6 +24,18 @@ function handleSubmit(e) {
     renderOneNinja(ninjaObj)
     addNinja(ninjaObj)
     document.querySelector("#addNinja").reset()
+}
+
+function handleChange(e) {
+    const selectedVillage = e.target.value
+    const arrOfNinja = document.querySelectorAll(".ninja-card")
+    arrOfNinja.forEach(ninja => {
+        if(`Village:${selectedVillage}` === ninja.querySelector(".village").innerText){
+            ninja.style.display="flex"
+        } else {
+            ninja.style.display="none"
+        }
+    })
 }
 
 
@@ -54,9 +68,9 @@ function renderOneNinja(ninja) {
     ninjaCard.id = `${ninja.name}`
     ninjaCard.innerHTML =`
             <img src="${ninja.imageUrl}">
-            <p>Name:${ninja.name}</p>
-            <p>Village:${ninja.village}</p>
-            <p>Rank:${ninja.rank}</p>
+            <p class="name">Name:${ninja.name}</p>
+            <p class="village">Village:${ninja.village}</p>
+            <p class="rank">Rank:${ninja.rank}</p>
             <p class="power" style="display:none;">${ninja.power}</p> 
     `
     document.querySelector("#ninjaContainer").appendChild(ninjaCard)

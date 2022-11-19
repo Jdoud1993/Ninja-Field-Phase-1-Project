@@ -83,8 +83,8 @@ function renderOneNinja(ninja) {
                 <p class="power" style="display:none;">${ninja.power}</p>
             </div>
             <div class="back">
-                <button>Add to Squad 1</button>
-                <button>Add to Squad 2</button>
+                <button class=addBtn>Add to Squad 1</button>
+                <button class=addBtn>Add to Squad 2</button>
             </div>
     `
     ninjaCard.addEventListener("mouseenter", handleMouse)

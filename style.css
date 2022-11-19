@@ -177,6 +177,23 @@ div {
     transform: rotateY(180deg);
 }
 
+.addBtn {
+    font-family: "Ninja Naruto", sans-serif;
+    color: rgb(251, 248, 243);
+    text-shadow: 5px 5px 10px black;
+    font-size: 50px;
+    background: none;
+    border: none;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    padding-top: 50px;
+}
+
+.addBtn:hover {
+    color: orange;
+    cursor: pointer; 
+}
+
 input[type=submit] {
     font-family: "Ninja Naruto", sans-serif;
     color: rgb(251, 248, 243);

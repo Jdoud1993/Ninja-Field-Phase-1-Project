@@ -46,25 +46,21 @@ function handleMouse(e) {
 }
 
 function handleClickOne(e) {
-    const arrOfSquadOne = document.getElementById("ninjasOne").children
+    const arrOfSquadOne = document.querySelector("#ninjasOne").children
     console.log(arrOfSquadOne)
     const ninjaInfo = e.target.parentElement.parentElement.querySelector(".front")
     console.log(ninjaInfo)
-    arrOfSquadOne.forEach((ninja) => {
-        if(arrOfSquadOne.length < 3) {
-            const tempNinjaCard = document.createElement("div");
-            tempNinjaCard.className = tempNinjaCard
-            tempNinjaCard.id=`${ninjaInfo.querySelector(".name").innerText}`
-            tempNinjaCard.innerHTML=`
-                <img class="img" src=${ninjaInfo.querySelector(".img".src)}>
-                <p class="name">${ninjaInfo.querySelector(".name").innerText}</p>
-                <p class="power" display="none">${ninjaInfo.querySelector(".power").innerText}
-            `
-            document.querySelector("#ninjasOne").appendChild(tempNinjaCard)
-        } else {
-            console.log("Error")
-        }
-    })
+    if(arrOfSquadOne.length < 3) {
+        const tempNinjaCard = document.createElement("div");
+        tempNinjaCard.className = tempNinjaCard
+        tempNinjaCard.id = `${ninjaInfo.querySelector(".name").innerText}`
+        tempNinjaCard.innerHTML = `
+            <img class="img" src=${ninjaInfo.querySelector(".img").src}>
+            <p class="name">${ninjaInfo.querySelector(".name").innerText}</p>
+            <p class="power" style="display:none">${ninjaInfo.querySelector(".power").innerText}
+        `
+        document.querySelector("#ninjasOne").appendChild(tempNinjaCard)
+    }
 }
 
 function handleClickTwo(e) {

@@ -136,11 +136,13 @@ div {
     transform: rotateY(180deg);
 }
 
-#ninjasOne {
-    display: flex;
-    justify-content: flex-start;
+#squadOne {
+    margin-top: 0;
 }
 
+#squadTwo {
+    margin-top: 0;
+}
 
 /*Class Styles */
 

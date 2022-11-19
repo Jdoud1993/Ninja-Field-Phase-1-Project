@@ -55,8 +55,7 @@ function handleClickOne(e) {
         tempNinjaCard.className = tempNinjaCard
         tempNinjaCard.id = `${ninjaInfo.querySelector(".name").innerText}`
         tempNinjaCard.innerHTML = `
-            <img class="img" src=${ninjaInfo.querySelector(".img").src}>
-            <p class="name">${ninjaInfo.querySelector(".name").innerText}</p>
+            <img style="height:100px" class="img" src=${ninjaInfo.querySelector(".img").src}>
             <p class="power" style="display:none">${ninjaInfo.querySelector(".power").innerText}
         `
         document.querySelector("#ninjasOne").appendChild(tempNinjaCard)

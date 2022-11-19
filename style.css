@@ -136,6 +136,11 @@ div {
     transform: rotateY(180deg);
 }
 
+#ninjasOne {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 /*Class Styles */
 

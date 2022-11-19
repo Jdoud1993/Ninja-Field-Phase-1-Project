@@ -1,13 +1,26 @@
+//Event Listeners
+
 document.addEventListener("DOMContentLoaded", () => {
-
 getAllNinjas()
-
 })
+
+document.querySelector("#addNinja").addEventListener("submit", handleSubmit)
 
 
 
 // Event Handler Functions
 
+function handleSubmit(e) {
+    e.preventDefault()
+    const ninjaObj = {
+        name:e.target.name.value,
+        imageUrl:e.target.img.value,
+        village:e.target.village.value,
+        rank:e.target.rank.value,
+        power:(Math.floor(Math.random()*100)+1)
+    }
+    renderOneNinja(animalObj)
+}
 
 
 // JSON fetch Functions

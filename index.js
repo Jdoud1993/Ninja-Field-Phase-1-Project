@@ -19,7 +19,8 @@ function handleSubmit(e) {
         rank:e.target.rank.value,
         power:(Math.floor(Math.random()*100)+1)
     }
-    renderOneNinja(animalObj)
+    renderOneNinja(ninjaObj)
+    addNinja(ninjaObj)
 }
 
 
@@ -29,6 +30,18 @@ function getAllNinjas() {
     fetch("http://localhost:3000/ninjas")
     .then(res => res.json())
     .then(ninjaData => ninjaData.forEach(ninja => renderOneNinja(ninja)))
+}
+
+function addNinja(ninjaObj) {
+    fetch("http://localhost:3000/ninjas", {
+        method:"POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify(ninjaObj)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
 }
 
 
@@ -46,6 +59,7 @@ function renderOneNinja(ninja) {
         <p>${ninja.village}</p>
         <h4>Rank</h4>
         <p>${ninja.rank}</p>
+        <p class="power" style="display:none;">${ninja.power}</p> 
     `
     document.querySelector("#ninjaContainer").appendChild(ninjaCard)
 }

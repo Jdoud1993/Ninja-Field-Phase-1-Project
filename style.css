@@ -7,8 +7,6 @@ body {
     background-repeat: repeat;
     background-position: center;
     background-size: 100px 100px;
-    
-
 }
 
 div {
@@ -29,6 +27,7 @@ div {
 
 #ninjas {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76612106-8aba-4097-9619-baee44cc3b5f/d88l3ym-4ea9a020-570a-45e1-9b2e-48b56fd03523.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2NjEyMTA2LThhYmEtNDA5Ny05NjE5LWJhZWU0NGNjM2I1ZlwvZDg4bDN5bS00ZWE5YTAyMC01NzBhLTQ1ZTEtOWIyZS00OGI1NmZkMDM1MjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bvSzMtEUF5fnaxadKipURSNrTGaXt25qbmHh2vrId6g");
@@ -92,6 +91,12 @@ div {
 }
 
 .ninja-card {
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 0.8s ease;
+}
+
+.front {
     background: linear-gradient(orange,white);
     width: 400px;
     height: 450px;
@@ -101,17 +106,34 @@ div {
     box-shadow: 0 0 50px black;
     border-style: solid;
     border-color: black;
+    backface-visibility: hidden;
+    position: absolute;
 }
 
-.ninja-card img {
+.front img {
     border-style: solid;
     border-color: black;
     margin-top: 10px;
 }
 
-.ninja-card p {
+.front p {
     font-size: 20px;
     font-family: "Ninja Naruto", sans-serif;
+}
+
+.back {
+    backface-visibility: hidden;
+    background: linear-gradient(orange,white);
+    width: 400px;
+    height: 450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 50px black;
+    border-style: solid;
+    border-color: black;
+    transform: rotateY(180deg);
 }
 
 
@@ -149,6 +171,10 @@ div {
 .filter-text:after {
     border: none;
     outline: none;
+}
+
+.flipCard {
+    transform: rotateY(180deg);
 }
 
 input[type=submit] {

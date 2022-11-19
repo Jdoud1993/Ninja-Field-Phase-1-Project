@@ -10,6 +10,9 @@ document.querySelector("#filterNinja").addEventListener("change", handleChange)
 
 
 
+
+
+
 // Event Handler Functions
 
 function handleSubmit(e) {
@@ -38,6 +41,11 @@ function handleChange(e) {
     })
 }
 
+function handleMouse(e) {
+    e.target.classList.toggle("flipCard")
+    console.log("flipped")
+}
+
 
 // JSON fetch Functions
 
@@ -64,14 +72,22 @@ function addNinja(ninjaObj) {
 
 function renderOneNinja(ninja) {
     const ninjaCard = document.createElement("div")
-    ninjaCard.classList = "ninja-card"
+    ninjaCard.classList.add("ninja-card")
     ninjaCard.id = `${ninja.name}`
     ninjaCard.innerHTML =`
-            <img src="${ninja.imageUrl}">
-            <p class="name">Name:${ninja.name}</p>
-            <p class="village">Village:${ninja.village}</p>
-            <p class="rank">Rank:${ninja.rank}</p>
-            <p class="power" style="display:none;">${ninja.power}</p> 
+            <div class="front">
+                <img src="${ninja.imageUrl}">
+                <p class="name">Name:${ninja.name}</p>
+                <p class="village">Village:${ninja.village}</p>
+                <p class="rank">Rank:${ninja.rank}</p>
+                <p class="power" style="display:none;">${ninja.power}</p>
+            </div>
+            <div class="back">
+                <button>Add to Squad 1</button>
+                <button>Add to Squad 2</button>
+            </div>
     `
+    ninjaCard.addEventListener("mouseenter", handleMouse)
+    ninjaCard.addEventListener("mouseleave", handleMouse)
     document.querySelector("#ninjaContainer").appendChild(ninjaCard)
 }

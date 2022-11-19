@@ -83,10 +83,12 @@ function renderOneNinja(ninja) {
                 <p class="power" style="display:none;">${ninja.power}</p>
             </div>
             <div class="back">
-                <button class=addBtn>Add to Squad 1</button>
-                <button class=addBtn>Add to Squad 2</button>
+                <button id=one class=addBtn>Add to Squad 1</button>
+                <button id=two class=addBtn>Add to Squad 2</button>
             </div>
     `
+    ninjaCard.querySelector("#one").addEventListener("click", handleClickOne)
+    ninjaCard.querySelector("#two").addEventListener("click", handleClickTwo)
     ninjaCard.addEventListener("mouseenter", handleMouse)
     ninjaCard.addEventListener("mouseleave", handleMouse)
     document.querySelector("#ninjaContainer").appendChild(ninjaCard)

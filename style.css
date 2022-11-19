@@ -79,6 +79,7 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76612106-8aba-4097-9619-baee44cc3b5f/d88l3ym-4ea9a020-570a-45e1-9b2e-48b56fd03523.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2NjEyMTA2LThhYmEtNDA5Ny05NjE5LWJhZWU0NGNjM2I1ZlwvZDg4bDN5bS00ZWE5YTAyMC01NzBhLTQ1ZTEtOWIyZS00OGI1NmZkMDM1MjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bvSzMtEUF5fnaxadKipURSNrTGaXt25qbmHh2vrId6g")
 }
 
 
@@ -100,11 +101,12 @@ div {
     -webkit-text-stroke-width:2px;
     -webkit-text-stroke-color: black;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right,white, white, white);
+    background-image: linear-gradient(to right,yellow,orange, orangered);
     -webkit-background-clip: text;
     font-size: 50px;
     border: none;
     appearance: none;
+    padding: 50px
 }
 
 .filter-text:hover {

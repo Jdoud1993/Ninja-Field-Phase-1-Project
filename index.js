@@ -93,9 +93,19 @@ function handleFight (e) {
     if (arrOfOnePow.reduce((accumulator, currentValue) => accumulator+currentValue) > arrOfTwoPow.reduce((accumulator, currentValue) => accumulator+currentValue)) {
         const winnerOne = document.querySelector("#winnerOne")
         winnerOne.style="display:block"
+        setTimeout(function() {
+            winnerOne.style="display:none"
+            document.querySelector("#ninjasOne").innerHTML=``
+            document.querySelector("#ninjasTwo").innerHTML=``
+        }, 5000)
     } else {
-        const winnerTwo = document.querySelector("winnerTwo")
+        const winnerTwo = document.querySelector("#winnerTwo")
         winnerTwo.style="display:block"
+        setTimeout(function() {
+            winnerTwo.style="display:none"
+            document.querySelector("#ninjasOne").innerHTML=``
+            document.querySelector("#ninjasTwo").innerHTML=``
+        }, 5000)
     }
 }
 

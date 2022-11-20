@@ -81,6 +81,14 @@ div {
     -webkit-text-stroke-color: black;
 }
 
+#winnerOne {
+    display:none
+}
+
+#winnerTwo {
+    display:none
+}
+
 #FIGHT:hover {
     color: orange;
     cursor: pointer; 

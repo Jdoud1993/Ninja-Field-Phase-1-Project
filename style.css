@@ -61,10 +61,13 @@ div {
     display: flex;
     flex-grow: .75;
     justify-content: space-around;
+    margin-top: 0;
 }
 
 #fightButton {
-    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
 }
 
 #FIGHT {

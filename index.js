@@ -91,9 +91,11 @@ function handleFight (e) {
         arrOfTwoPow.push(ninjaPower)
     }
     if (arrOfOnePow.reduce((accumulator, currentValue) => accumulator+currentValue) > arrOfTwoPow.reduce((accumulator, currentValue) => accumulator+currentValue)) {
-        console.log("Squad One Wins!")
+        const winnerOne = document.querySelector("#winnerOne")
+        winnerOne.style="display:block"
     } else {
-        console.log("Squad Two Wins")
+        const winnerTwo = document.querySelector("winnerTwo")
+        winnerTwo.style="display:block"
     }
 }
 

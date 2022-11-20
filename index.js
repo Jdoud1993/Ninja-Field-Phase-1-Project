@@ -8,6 +8,8 @@ document.querySelector("#addNinja").addEventListener("submit", handleSubmit)
 
 document.querySelector("#filterNinja").addEventListener("change", handleChange)
 
+document.querySelector("#FIGHT").addEventListener("click", handleFight)
+
 
 
 
@@ -47,9 +49,7 @@ function handleMouse(e) {
 
 function handleClickOne(e) {
     const arrOfSquadOne = document.querySelector("#ninjasOne").children
-    console.log(arrOfSquadOne)
     const ninjaInfo = e.target.parentElement.parentElement.querySelector(".front")
-    console.log(ninjaInfo)
     if(arrOfSquadOne.length < 3) {
         const tempNinjaCard = document.createElement("div");
         tempNinjaCard.className = tempNinjaCard
@@ -64,9 +64,7 @@ function handleClickOne(e) {
 
 function handleClickTwo(e) {
     const arrOfSquadTwo = document.querySelector("#ninjasTwo").children
-    console.log(arrOfSquadTwo)
     const ninjaInfo = e.target.parentElement.parentElement.querySelector(".front")
-    console.log(ninjaInfo)
     if(arrOfSquadTwo.length < 3) {
         const tempNinjaCard = document.createElement("div");
         tempNinjaCard.className = tempNinjaCard
@@ -76,6 +74,26 @@ function handleClickTwo(e) {
             <p class="power" style="display:none">${ninjaInfo.querySelector(".power").innerText}
         `
         document.querySelector("#ninjasTwo").appendChild(tempNinjaCard)
+    }
+}
+
+function handleFight (e) {
+    const ninjasOne = document.querySelector("#ninjasOne").children
+    const arrOfOnePow = []
+    for (value of ninjasOne) {
+        const ninjaPower = value.querySelector(".power").innerText
+        arrOfOnePow.push(ninjaPower)
+    }
+    const ninjasTwo = document.querySelector("#ninjasTwo").children
+    const arrOfTwoPow = []
+    for (value of ninjasTwo) {
+        const ninjaPower = value.querySelector(".power").innerText
+        arrOfTwoPow.push(ninjaPower)
+    }
+    if (arrOfOnePow.reduce((accumulator, currentValue) => accumulator+currentValue) > arrOfTwoPow.reduce((accumulator, currentValue) => accumulator+currentValue)) {
+        console.log("Squad One Wins!")
+    } else {
+        console.log("Squad Two Wins")
     }
 }
 
